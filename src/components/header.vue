@@ -3,11 +3,12 @@
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Chaussures Élégance</h1>
       <nav class="space-x-6 hidden md:flex">
-        <a href="#" class="hover:text-blue-600">Accueil</a>
+        <a href="/" class="hover:text-blue-600">Accueil</a>
         <a href="#" class="hover:text-blue-600">Nouveautés</a>
-        <a href="#" class="hover:text-blue-600">Homme</a>
-        <a href="#" class="hover:text-blue-600">Femme</a>
+        <a href="/category" class="hover:text-blue-600">Homme</a>
+        <a href="/category" class="hover:text-blue-600">Femme</a>
         <a href="#" class="hover:text-blue-600">Contact</a>
+        <a href="/panier" class="hover:text-blue-600">Panier</a>
       </nav>
       <button class="md:hidden">☰</button>
     </div>

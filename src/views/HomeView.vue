@@ -22,6 +22,7 @@
           :name="product.name"
           :description="product.description"
           :price="product.price"
+          :image="product.image"
         />
       </div>
     </div>
@@ -36,21 +37,29 @@ const products = [
     name: 'Air Jordan 1',
     description: 'Cuir véritable - Confort ultime',
     price: 89.99,
+    image:
+      'https://images.stockx.com/360/Sp5der-PNK-Hoodie-Black/Images/Sp5der-PNK-Hoodie-Black/Lv2/img01.jpg?w=576&q=60&dpr=1&updated_at=1672852874&h=384',
   },
   {
     name: 'Nike Air Force 1',
     description: 'Un classique intemporel',
     price: 99.99,
+    image:
+      'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Images/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Lv2/img20.jpg?w=576&q=60&dpr=1&updated_at=1740687534&h=384',
   },
   {
     name: 'Adidas Ultraboost',
     description: 'Performance et confort',
     price: 129.99,
+    image:
+      'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Images/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Lv2/img20.jpg?w=576&q=60&dpr=1&updated_at=1740687534&h=384',
   },
   {
     name: 'New Balance 550',
     description: 'Look rétro revisité',
     price: 110.0,
+    image:
+      'https://images.stockx.com/360/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Images/Air-Jordan-1-Retro-High-OG-SP-Union-LA-Chicago-Shadow/Lv2/img20.jpg?w=576&q=60&dpr=1&updated_at=1740687534&h=384',
   },
 ]
 </script>
