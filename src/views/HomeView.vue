@@ -16,32 +16,41 @@
     <div class="max-w-7xl mx-auto px-4">
       <h3 class="text-2xl font-semibold mb-8 text-center">Produits en vedette</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div class="border rounded-2xl overflow-hidden shadow hover:shadow-md transition">
-          <img
-            src="https://via.placeholder.com/400x300"
-            alt="Chaussure"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-4">
-            <h4 class="font-semibold text-lg">Chaussure Classique</h4>
-            <p class="text-gray-600">Cuir véritable - Confort ultime</p>
-            <p class="font-bold mt-2">89,99 €</p>
-          </div>
-        </div>
-
-        <div class="border rounded-2xl overflow-hidden shadow hover:shadow-md transition">
-          <img
-            src="https://via.placeholder.com/400x300"
-            alt="Chaussure"
-            class="w-full h-60 object-cover"
-          />
-          <div class="p-4">
-            <h4 class="font-semibold text-lg">Sneakers Moderne</h4>
-            <p class="text-gray-600">Design urbain - Respirant</p>
-            <p class="font-bold mt-2">74,99 €</p>
-          </div>
-        </div>
+        <Card
+          v-for="(product, index) in products"
+          :key="index"
+          :name="product.name"
+          :description="product.description"
+          :price="product.price"
+        />
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import Card from '../components/card.vue'
+
+const products = [
+  {
+    name: 'Air Jordan 1',
+    description: 'Cuir véritable - Confort ultime',
+    price: 89.99,
+  },
+  {
+    name: 'Nike Air Force 1',
+    description: 'Un classique intemporel',
+    price: 99.99,
+  },
+  {
+    name: 'Adidas Ultraboost',
+    description: 'Performance et confort',
+    price: 129.99,
+  },
+  {
+    name: 'New Balance 550',
+    description: 'Look rétro revisité',
+    price: 110.0,
+  },
+]
+</script>
