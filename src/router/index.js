@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Category from '../views/category.vue'
 import Panier from '../views/Panier.vue'
 import Produit from '../views/Produit.vue'
+import test from '../views/category2.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/produit',
       name: 'produit',
       component: Produit,
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test,
     },
   ],
 })
